@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="bSlider">
-  {% include slider.html pretitle="Amazing new" title="Desing Agency" subtitle="Lorem ipsum" %}
+  {% include slider.html pretitle="Amazing new" title="Design Agency" subtitle="Lorem ipsum" %}
 </section> 
 
 <section class="bElements pdd-v--m">
@@ -13,13 +13,13 @@ layout: default
         {% include element-item.html color="pink" shape-up="circle" icon="tv" pos-title ="Lorem Ipsum" text="Mauris pulvinar rutrum ligula, eu sagittis eros sagittis non." %}
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
-        {% include element-item.html color="pink" shape-up="circle" icon="news" pos-title ="Aliquam placerat" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices imperdiet. " %}
+        {% include element-item.html color="pink" shape-up="circle" icon="news" pos-title ="Aliquam placerat" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices. " %}
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
         {% include element-item.html color="pink" shape-up="circle" icon="cup" pos-title ="Etiam gravida" text="Nam consequat, ipsum at tincidunt lacinia, tellus nunc sagittis neque." %}
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
-        {% include element-item.html color="pink" shape-up="circle" icon="key" pos-title ="Etiam vehicula" text="Donec dictum, est ut varius congue, sem ex scelerisque massa." %}
+        {% include element-item.html color="pink" shape-up="circle" icon="key" pos-title ="Donec dictum" text="Donec dictum, est ut varius congue, sem ex scelerisque massa." %}
       </div>          
     </div>
   </div>
@@ -75,22 +75,47 @@ layout: default
 
 <section class="bTax pdd-v--s">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        {% include element-item.html btn="Buy this plan" shape-down="square" pre-title="basic" title ="Lorem Ipsum" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
+    <div class="row pdd-h--m">
+      <div class="col-lg-4 col-md-6 col-sm-12 tax">
+        {% include element-item.html btn="Buy this plan" shape-down="square" pre-title="basic" title ="$25/Month" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        {% include element-item.html btn="Buy this plan" color="pink" shape-down="square" pre-title="basic" title ="Lorem Ipsum" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
+      <div class="col-lg-4 col-md-6 col-sm-12 tax">
+        {% include element-item.html btn="Buy this plan" color="pink" shape-down="square" pre-title="standard" title ="$35/Month" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        {% include element-item.html btn="Buy this plan" shape-down="square" pre-title="basic" title ="Lorem Ipsum" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
+      <div class="col-lg-4 col-md-6 col-sm-12 tax">
+        {% include element-item.html btn="Buy this plan" shape-down="square" pre-title="professional" title ="$45/Month" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
       </div>     
     </div>
   </div>
 </section>
 
-<section class="bMap">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163930.5032602026!2d14.325542252522432!3d50.05980577942709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPraga%2C+Chequia!5e0!3m2!1sgl!2ses!4v1517053246894" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <!-- AIzaSyAd4gVtW1oFXMmk5R_Rnk6N__2NFs8dK_I -->
+<section class="bMap box-content pdd-v--xs">
 
-</section>
+<div class="container bg--grey px-5 py-5 w-50">
+  <div class="txt--wht txt-alg--ctr">
+    <h2>Contact Us</h2>
+    <address>C/Urzaiz nº 245 1ºb Vigo<br/>Pontevedra/Galicia/Spain</address>
+    <p>Phone:<a class="lnk--wht" href="tel:986098765">+34 986 098 765</a></p>
+    <p>Email:<a class="lnk--wht" href="mailto:jondoe@designagency.com">jondoe@designagency.com</a></p>
+  </div>
+  <form>
+    <div class="form-group">
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Phone">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Message" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Send</button>
+  </form>
+</div>
+<div class="b-bg">
+  <div class="bg-img" style="background-image: url('images/map.png')"></div>
+</div>
+
+ </section>

@@ -1,11 +1,20 @@
 
-body{
+body {
+    font-family: 'Hind Vadodara', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
     color: #6f6f6f;
+    background-color: #fff;
 }
+
 
 ul{
     list-style: none;
 
+}
+h1{
+    letter-spacing:0.2rem;
 }
 
 .box-content{
@@ -29,7 +38,10 @@ ul{
     background-color: #fff;
 }
 .bg--pink--transparent{
-    background-color: rgba(234, 179, 156, 0.4);
+    background-color: rgba(234, 179, 156, 0.6);
+}
+.bg--grey{
+    background-color: #6f6f6f;
 }
 
 .bg-img{
@@ -67,7 +79,9 @@ background-color: #fff0;
     height: 100%;
     width: 100%;
 }
-
+.brd--rad{
+    border-radius: 2px;
+}
 /****tamaño fuentes******/
 .txt-sze--xxl{
 font-size: 3.5em;
@@ -98,12 +112,12 @@ font-size: 0.8em;
 .lnk--wht{
     color:#fff;
 }
-.bg--pink p{
+/*.bg--pink p{
     color: #eab39c;
-}
-.form-control::-webkit-input-placeholder { color:#fff; }
-.form-control::-moz-placeholder { color:#fff; } /* firefox 19+ */
-.form-control:-ms-input-placeholder { color:#fff; } /* ie */
+}*/
+.bNewsletter .form-control::-webkit-input-placeholder { color:#fff; }
+.bNewsletter .form-control::-moz-placeholder { color:#fff; } /* firefox 19+ */
+.bNewsletter .form-control:-ms-input-placeholder { color:#fff; } /* ie */
 input:-moz-placeholder { color:#fff; }
 
 /*******formato fuente******/
@@ -136,6 +150,10 @@ input:-moz-placeholder { color:#fff; }
 .pdd-h--xxs{
     padding-left:0.5rem;
     padding-right: 0.5rem;
+}
+.pdd-h--m{
+    padding-left:6rem;
+    padding-right: 6rem;
 }
 .pdd-v--xxs{
     padding-top:0.5rem;
@@ -192,7 +210,7 @@ input:-moz-placeholder { color:#fff; }
 /*******hover*****/
 .bg-hover{
     position: absolute;
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -200,6 +218,14 @@ input:-moz-placeholder { color:#fff; }
     &:hover{
         opacity:1;
     }
+}
+
+/********bloque tasas******/
+.tax .box--square{
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+.tax .box--square a{
+    padding: 0.3rem 3rem;
 }
 /********navbar********/
 .site-header {
@@ -336,15 +362,7 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
-body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-   /* color: $text-color;*/
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-}
+
 
 
 
