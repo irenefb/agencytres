@@ -19,7 +19,7 @@ layout: default
         {% include element-item.html color="pink" shape-up="circle" icon="cup" pos-title ="Etiam gravida" text="Nam consequat, ipsum at tincidunt lacinia, tellus nunc sagittis neque." %}
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
-        {% include element-item.html color="pink" shape-up="circle" icon="key" pos-title ="Donec dictum" text="Donec dictum, est ut varius congue, sem ex scelerisque massa." %}
+        {% include element-item.html color="pink" shape-up="circle" icon="key" pos-title="Donec dictum" text="Donec dictum, est ut varius congue, sem ex scelerisque massa." %}
       </div>          
     </div>
   </div>
@@ -64,25 +64,20 @@ layout: default
   {% include carousel.html i-1-title="Fulanito" i-1-subtitle="Web developer" i-2-title="Menganito" i-2-subtitle="Front-end" i-3-title="Citranito" i-3-subtitle="Graphic designer" i-4-title="Perico" i-4-subtitle="Programmer" i-5-title="De los palotes" i-5-subtitle="administrator" i-6-title="Jon Doe" i-6-subtitle="Personal cleaning" i-7-title="Fulanito" i-7-subtitle="The Boss" i-8-title="Menganito" i-8-subtitle="Web developer" %}
 </section>
 
-<section class="bRrss box-content pdd-v--l">
-  <div class="container txt--wht lnk--wht">
-    {% include element-item.html color="pink" shape-up="circle" icon="facebook" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices imperdiet. Mauris vehicula erat eget tincidunt fermentum. Morbi ut ante malesuada, auctor enim non, convallis mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vulputate nec neque nec congue." link="@JohnDoe" %}
-  </div>
-  <div class="b-bg">
-    <div class="bg-img" style="background-image: url('images/una.jpeg')"></div>
-  </div>
+<section class="bRrss">
+  {% include b-rrss.html image="images/una.jpeg" color="pink" shape-up="circle" icon="facebook" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices imperdiet. Mauris vehicula erat eget tincidunt fermentum. Morbi ut ante malesuada, auctor enim non, convallis mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vulputate nec neque nec congue." link="@JohnDoe" %}
 </section>
 
 <section class="bTax pdd-v--s">
   <div class="container">
-    <div class="row pdd-h--m">
-      <div class="col-lg-4 col-md-6 col-sm-12 tax">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-3 col-md-6 col-sm-12 tax">
         {% include element-item.html btn="Buy this plan" shape-down="square" pre-title="basic" title ="$25/Month" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 tax">
+      <div class="col-lg-3 col-md-6 col-sm-12 tax">
         {% include element-item.html btn="Buy this plan" color="pink" shape-down="square" pre-title="standard" title ="$35/Month" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 tax">
+      <div class="col-lg-3 col-md-6 col-sm-12 tax">
         {% include element-item.html btn="Buy this plan" shape-down="square" pre-title="professional" title ="$45/Month" text="<ul><li>Mauris pulvinar</li><li> rutrum ligula, </li><li>eu sagittis eros</li><li> sagittis non.</li></ul>" %}
       </div>     
     </div>
@@ -91,31 +86,6 @@ layout: default
 
 <section class="bMap box-content pdd-v--xs">
 
-<div class="container bg--grey px-5 py-5 w-50">
-  <div class="txt--wht txt-alg--ctr">
-    <h2>Contact Us</h2>
-    <address>C/Urzaiz nº 245 1ºb Vigo<br/>Pontevedra/Galicia/Spain</address>
-    <p>Phone:<a class="lnk--wht" href="tel:986098765">+34 986 098 765</a></p>
-    <p>Email:<a class="lnk--wht" href="mailto:jondoe@designagency.com">jondoe@designagency.com</a></p>
-  </div>
-  <form>
-    <div class="form-group">
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-    </div>
-    <div class="form-group">
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Phone">
-    </div>
-    <div class="form-group">
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
-    </div>
-    <div class="form-group">
-      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Message" rows="3"></textarea>
-    </div>
-    <button type="button" class="btn btn-primary btn-lg btn-block">Send</button>
-  </form>
-</div>
-<div class="b-bg">
-  <div class="bg-img" style="background-image: url('images/map.png')"></div>
-</div>
+  {% include formContact.html title="Contact Us" address="C/Urzaiz nº 245 1ºB entresuelo, Vigo<br/>Pontevedra/Galicia/Spain<br/>Phone:<a class="lnk--wht" href="tel:986098765">+34 986 098 765</a><br/>Fax:+34 986 098 765" image="images/map.png"%}
 
  </section>
