@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="bSlider">
-  {% include slider.html pretitle="Amazing new" title="Design Agency" subtitle="Lorem ipsum" %}
+  {% include slider.html pretitle="Amazing new" title="Design Agency" subtitle="Lorem ipsum" slide01="images/pexels-photo-235621.jpeg" slide02="images/dos.jpeg" slide03="images/tres.jpg" %}
 </section> 
 
 <section class="bElements pdd-v--m">
@@ -26,13 +26,9 @@ layout: default
 </section>      
 
 <section class="bNewsletter box-content pdd-v--m">
-  <div class="container">
-    {% include newsletter.html %}
-  </div>
-  <div class="b-bg">
-    <div class="bg-img" style="background-image: url('images/una.jpeg')">
-    </div>
-  </div>  
+
+    {% include newsletter.html title="Subscribe to our newsletter" button="subscribe" bg-image="images/una.jpeg" %}
+  
 </section> 
 
 <section class="bElements--square pdd-v--s">
@@ -86,6 +82,6 @@ layout: default
 
 <section class="bMap box-content pdd-v--xs">
 
-  {% include FormContact.html title="Contact Us" address="C Urzaiz n 245 1B entresuelo, Vigo" country="Pontevedra, Galicia. Spain" phone="+34 986 098 765" fax="+34 986 098 765" image="images/map.png" %}
+  {% include FormContact.html title="Contact Us" address="C Urzaiz n 245 1B entresuelo, Vigo" country="Pontevedra, Galicia. Spain" phone="+34 986 098 765" fax="+34 986 098 765" bg-image="images/map.png" %}
 
  </section>

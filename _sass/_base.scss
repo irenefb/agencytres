@@ -99,7 +99,12 @@ font-size: 1em;
 .txt-sze--xs{
 font-size: 0.8em;
 }
+@media (max-width:576px){
+    .txt-sze--xxl{
+font-size: 2em;
+}
 
+}
 
 /*****color fuentes******/
 
@@ -229,7 +234,7 @@ input:-moz-placeholder { color:#fff; }
 .tax .box--square a{
     padding: 0.3rem 2rem;
 }
-/********navbar********/
+/********navbar y logo********/
 .site-header {
     min-height: 56px;
     margin-top: 10px;
