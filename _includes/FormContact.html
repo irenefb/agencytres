@@ -3,7 +3,10 @@
     <div class="col-lg-7 col-md-9 col-sm-12 bg--grey px-5 py-5">
       <div class="txt--wht txt-alg--ctr">
         <h2>{{ include.title }}</h2>
-        <address>{{ include.address }}
+        <address>{{ include.address }}<br/>
+                {{ include.country }}<br/>
+                Phone:<a class="lnk--wht" href="tel:{{ include.phone }}">{{ include.phone }}</a><br/>
+                Fax: {{ include.phone }}
         </address>
       </div>
       <form>
