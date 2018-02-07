@@ -13,9 +13,7 @@ ul{
     list-style: none;
 
 }
-h1{
-    letter-spacing:0.2rem;
-}
+
 
 .box-content{
     display: -webkit-box;
@@ -112,9 +110,10 @@ font-size: 0.8em;
 .lnk--wht{
     color:#fff;
 }
-/*.bg--pink p{
-    color: #eab39c;
-}*/
+.txt--pink{
+    color:#eab39c;
+}
+
 .bNewsletter .form-control::-webkit-input-placeholder { color:#fff; }
 .bNewsletter .form-control::-moz-placeholder { color:#fff; } /* firefox 19+ */
 .bNewsletter .form-control:-ms-input-placeholder { color:#fff; } /* ie */
@@ -126,6 +125,9 @@ input:-moz-placeholder { color:#fff; }
 }
 .txt--bld{
     font-weight: bold;   
+}
+.txt--spa--l{
+    letter-spacing:0.2rem;
 }
 
 /*****aligns*******/
@@ -245,8 +247,7 @@ input:-moz-placeholder { color:#fff; }
     }
 }
 
-.nav,
-.site-title{
+.nav{
     color: #000;
 
 

@@ -9,16 +9,22 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 2rem;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    font-weight:400;
 
     &,
-    &:visited {
-        color: $grey-color-dark;
+    &:hover,
+    &:visited{
+    color: #eab39c;
     }
+
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color: #eab39c;
 }
 
 .site-nav {
