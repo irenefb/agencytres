@@ -1,4 +1,4 @@
-# holaOwlCarousel2 is currently being transferred to a new owner
+# 
 
 Stay tuned while the new owner sorts through some stuff. (Oh, hi, I'm [David](https://github.com/daviddeutsch)!)
 
