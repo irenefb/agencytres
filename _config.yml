@@ -9,6 +9,6 @@ baseurl: "/agencytres" # the subpath of your site, e.g. /blog/
 url: "http://irenefb.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-
+include: ['_pages']
 # Build settings
 markdown: kramdown
