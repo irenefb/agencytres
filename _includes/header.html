@@ -13,11 +13,12 @@
     <div  class="navbar-nav">
       {% for page in site.pages %}
           {% if page.title %}
-          <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <a class="nav-link mrg-h--xs" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
     </div>
   </div>
+  <span class="icon-search txt-sze--s"></span>
 </nav>
 
 

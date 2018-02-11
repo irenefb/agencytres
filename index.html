@@ -10,16 +10,16 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-6 col-sm-12">
-        {% include element-item.html color="pink" shape-up="circle" icon="tv" pos-title ="Lorem Ipsum" text="Mauris pulvinar rutrum ligula, eu sagittis eros sagittis non." %}
+        {% include element-item.html color="pink" txtcolor="wht" shape-up="circle" icon="tv" pos-title ="Lorem Ipsum" text="Mauris pulvinar rutrum ligula, eu sagittis eros sagittis non." %}
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
-        {% include element-item.html color="pink" shape-up="circle" icon="news" pos-title ="Aliquam placerat" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices. " %}
+        {% include element-item.html color="pink" txtcolor="wht" shape-up="circle" icon="news" pos-title ="Aliquam placerat" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices. " %}
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
-        {% include element-item.html color="pink" shape-up="circle" icon="cup" pos-title ="Etiam gravida" text="Nam consequat, ipsum at tincidunt lacinia, tellus nunc sagittis neque." %}
+        {% include element-item.html color="pink" txtcolor="wht" shape-up="circle" icon="cup" pos-title ="Etiam gravida" text="Nam consequat, ipsum at tincidunt lacinia, tellus nunc sagittis neque." %}
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
-        {% include element-item.html color="pink" shape-up="circle" icon="key" pos-title="Donec dictum" text="Donec dictum, est ut varius congue, sem ex scelerisque massa." %}
+        {% include element-item.html color="pink" txtcolor="wht" shape-up="circle" icon="key" pos-title="Donec dictum" text="Donec dictum, est ut varius congue, sem ex scelerisque massa." %}
       </div>          
     </div>
   </div>
@@ -52,7 +52,7 @@ layout: default
 
 <section class="bText pdd-v--s">
   <div class="container">
-    {% include element-item.html pre-title="Meet our team" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices imperdiet. Mauris vehicula erat eget tincidunt fermentum. Morbi ut ante malesuada, auctor enim non, convallis mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vulputate nec neque nec congue." %}
+    {% include element-item.html pre-title="Meet our team" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices imperdiet. Mauris vehicula erat eget. <br/>Morbi ut ante malesuada, auctor enim non, convallis mi. Interdum et malesuada." %}
   </div>
 </section>        
 
@@ -61,7 +61,7 @@ layout: default
 </section>
 
 <section class="bRrss">
-  {% include b-rrss.html image="images/una.jpeg" color="pink" shape-up="circle" icon="facebook" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices imperdiet. Mauris vehicula erat eget tincidunt fermentum. Morbi ut ante malesuada, auctor enim non, convallis mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vulputate nec neque nec congue." link="@JohnDoe" %}
+  {% include rrss.html image="images/una.jpeg" color="wht" txtcolor="pink" shape-up="circle" icon="facebook" text="Sed vitae ligula eget velit dictum lacinia. Nunc volutpat ultrices imperdiet. Mauris vehicula erat eget tincidunt.<br/>Morbi ut ante fermentum malesuada, auctor enim non, convallis mi." link="@JohnDoe" %}
 </section>
 
 <section class="bTax pdd-v--s">
@@ -82,7 +82,7 @@ layout: default
 
 <section class="bMap box-content pdd-v--xs">
 
-  {% include FormContact.html title="Contact Us" address="C Urzaiz n 245 1B entresuelo, Vigo" country="Pontevedra, Galicia. Spain" phone="+34 986 098 765" fax="+34 986 098 765" bg-image="images/map.png" %}
+  {% include formcontact.html title="Contact Us" address="C Urzaiz n 245 1B entresuelo, Vigo" country="Pontevedra, Galicia. Spain" phone="+34 986 098 765" fax="+34 986 098 765" bg-image="images/map.png" %}
 
 
  </section>
